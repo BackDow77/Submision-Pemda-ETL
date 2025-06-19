@@ -1,0 +1,56 @@
+✅ Submission Text
+Judul Proyek:
+🧺 E-commerce Fashion Product Scraper & Cleaner
+________________________________________
+📁 Struktur Folder:
+bash
+CopyEdit
+Submision Pemda/
+├── scraped_products.csv         # (file hasil scraping - input)
+├── cleaned_products.csv         # (file hasil transformasi - output)
+├── main.py                      # main script untuk menjalankan proses
+├── requirements.txt             # daftar dependensi
+├── test/
+│   ├── test_transform.py        # unit test untuk transformasi data
+│   └── test_load.py             # unit test untuk penyimpanan file
+└── utils/
+    ├── __init__.py              # agar utils dianggap sebagai package
+    ├── extract.py               # (opsional) tempat fungsi scraping
+    ├── transform.py             # fungsi pembersihan dan transformasi data
+    └── load.py                  # fungsi menyimpan file dan main pipeline
+________________________________________
+🚀 Cara Menjalankan Program:
+1.	Install dependencies:
+bash
+pip install -r requirements.txt
+2.	Jalankan program utama:
+bash
+python3 utils/load.py
+Atau bisa juga melalui:
+bash
+python3 main.py
+________________________________________
+📦 Deskripsi File Penting:
+•	transform.py:
+Membersihkan dan mentransformasi data (harga dikonversi, rating diformat, dan kolom difilter).
+•	load.py:
+Membaca file mentah (scraped_products.csv), membersihkan dengan transform_data, lalu menyimpan hasil ke cleaned_products.csv.
+•	test_transform.py dan test_load.py:
+Berisi unit test dengan unittest untuk memastikan proses pembersihan dan penyimpanan berjalan dengan benar.
+________________________________________
+🧪 Menjalankan Unit Test:
+bash
+python3 -m unittest discover -s test
+
+🧪 Menjalankan Test Coverage:
+bash
+coverage run -m unittest discover -s test
+
+bash 
+coverage report -m
+
+# Url Google Sheets:
+https:https://docs.google.com/spreadsheets/d/1auX4EssPpV-hpMycDyKVODwLz0_GzrLEDoH-B7Z-OMo/edit?gid=754629257#gid=754629257
+
+
+
